@@ -35,7 +35,7 @@ Mobile screenshot
 ### Links
 
 - Solution URL: [Here](https://github.com/zyq-m/huddle-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Here](https://zyq-m.github.io/huddle-landing-page/)
 
 ## My process
 
