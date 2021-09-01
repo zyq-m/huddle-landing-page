@@ -1,0 +1,149 @@
+@import 'variables';
+
+body {
+    background-image: url(../images/bg-mobile.svg);
+    background-color: $Violet;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    img {
+        max-width: 7.625rem;
+        margin-bottom: 3.375rem;
+    }
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin-bottom: 4rem;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 4.5rem;
+    }
+
+    article {
+        text-align: center;
+        line-height: 1.6;
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p {
+            margin-bottom: 1.875rem;
+        }
+
+        a {
+            margin: auto;
+            padding: 0.5rem;
+            display: block;
+            width: 12.625rem;
+            font-size: 0.8rem;
+            color: $Violet;
+            text-decoration: none;
+            background-color: $white;
+            border-radius: 2rem;
+            box-shadow: 0px 3px 9px -2px $black;
+            
+            transition: 400ms ease-in-out;
+
+            &:hover {
+                color: $white;
+                background-color: $SoftMagenta;
+            }
+        }
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    a {
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: white;
+        border: 1px solid white;
+        border-radius: 21px;
+        width: 30px;
+        height: 30px;
+
+        transition: 400ms ease-in-out;
+
+        &:hover {
+            color: $SoftMagenta;
+            border: 2px solid $SoftMagenta;
+        }
+    }
+}
+
+@media (min-width: 68.75em) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+        height: 100vh;
+        margin: 4rem 5rem;
+    }
+
+
+    .logo {
+        img {
+            max-width: 12.625rem;
+            margin-bottom: 6.5625rem;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.75rem;
+        margin-bottom: 1.6875rem;
+
+        img {
+            margin-bottom: 0;
+        }
+
+        article {
+            text-align: left;
+            max-width: 31.9375rem;
+            min-width: 20rem;
+            margin-bottom: 6rem;
+
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.15625rem;
+            }
+
+            a {
+                text-align: center;
+                font-size: 1.15625rem;
+                padding: 0.9rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .social {
+        justify-content: flex-end;
+        gap: 1rem;
+
+        a {
+            font-size: 1rem;
+            border: 2px solid white;
+            width: 42px;
+            height: 42px;
+        }
+    }
+}
